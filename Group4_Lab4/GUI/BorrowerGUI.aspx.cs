@@ -136,9 +136,9 @@ namespace Group4_Lab4.GUI
 
         protected void GridView1_RowCommand1(object sender, GridViewCommandEventArgs e)
         {
-            int borrowerNumber = int.Parse(GridView1.Rows[10].Cells[1].Text);
+           // int borrowerNumber = int.Parse(GridView1.Rows[10].Cells[1].Text);
            
-            new BorrowerDAO().Delete(borrowerNumber);
+          //  new BorrowerDAO().Delete(borrowerNumber);
 
         }
     }

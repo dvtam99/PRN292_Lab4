@@ -14,7 +14,7 @@
 <table style="width: 100%; height: 102px;">
     <tr>
         <td class="auto-style2" rowspan="6">
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" DataSourceID="ObjectDataSource1" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowCommand="GridView1_RowCommand1">
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" DataSourceID="ObjectDataSource1" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowCommand="GridView1_RowCommand1" DataKeyNames="borrowerNumber">
                 <Columns>
                     <asp:CommandField ShowDeleteButton="True" ShowSelectButton="True" />
                 </Columns>
@@ -67,7 +67,7 @@
 <br />
 <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="Delete" SelectMethod="getAllMember" TypeName="Group4_Lab4.DAL.BorrowerDAO">
     <DeleteParameters>
-        <asp:Parameter Name="b" Type="Int32" />
+        <asp:Parameter Name="borrowerNumber" Type="Int32" />
     </DeleteParameters>
     <FilterParameters>
         <asp:SessionParameter Name="newparameter" SessionField="borrowerNumber" />

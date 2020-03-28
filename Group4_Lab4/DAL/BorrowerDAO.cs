@@ -37,10 +37,10 @@ namespace Group4_Lab4.DAL
             else return (int)(dt.Compute("max(borrowerNumber)", ""));
         }
 
-        public bool Delete(int b)
+        public bool Delete(int borrowerNumber)
         {
                 SqlCommand cmd = new SqlCommand("DELETE FROM [dbo].[Borrower] WHERE borrowerNumber = @b");
-                cmd.Parameters.AddWithValue("@b", b);
+                cmd.Parameters.AddWithValue("@b", borrowerNumber);
          return UpdateTable(cmd);
     }
         public bool Edit(Borrower b)
