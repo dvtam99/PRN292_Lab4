@@ -7,15 +7,7 @@
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .auto-style1 {
-            height: 33px;
-        }
-        .auto-style2 {
-            width: 49px;
-        }
-    </style>
-</head>
+    </head>
 <body>
     <form runat="server">
     <div class="page">
@@ -39,7 +31,7 @@
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
                     EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
-                    onmenuitemclick="NavigationMenu_MenuItemClick">
+                    onmenuitemclick="NavigationMenu_MenuItemClick" Font-Size="Large" ForeColor="#FF9933" Height="63px" Width="676px">
                     <Items>
                         <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Book" Value="Book" NavigateUrl="~/GUI/BookGUI.aspx"></asp:MenuItem>
